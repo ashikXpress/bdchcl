@@ -109,7 +109,7 @@ Route::get('/member/profile/', 'members\MemberProfileController@index')->name('m
 
 //Member My Key
 
-Route::get('/member/my_key/', 'members\EmpLoginController@myKey')->name('member.my_key');
+Route::get('/member/my_key/', 'members\MyKeyController@index')->name('member.my_key');
 
 
 

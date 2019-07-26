@@ -84,25 +84,13 @@
                                         <th>Created By</th>
                                     </tr>
                                     </thead>
-
-                                    <tbody>
-                                        <tr>
-                                            <td>
-
-                                            </td>
-                                            <td>1oi2uehqwn9d</td>
-                                            <td>
-                                                no
-                                            </td>
-                                            <td>1</td>
-                                            <td>Md Jasim Uddin</td>
-                                        </tr>
-                                    </tbody>
                                     <tbody>
                                     @foreach($myKeys as $myKey)
                                         <tr>
                                             <td>
-
+                                                <label>
+                                                    {{ $myKey->id }}
+                                                </label>
                                             </td>
                                             <td>{{ $myKey->key_id }}</td>
                                             <td>

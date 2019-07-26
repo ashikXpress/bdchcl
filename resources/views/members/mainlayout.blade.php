@@ -202,6 +202,14 @@
                     </a>
                 </li>
                 <li class="treeview">
+                    <a href="">
+                        <i class="fa fa-list-alt"></i><span>Add Member</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                    </a>
+                </li>
+                <li class="treeview">
                     <a href="{{ route('member.my_key') }}">
                         <i class="fa fa-credit-card-alt"></i><span>My Key</span>
                         <span class="pull-right-container">

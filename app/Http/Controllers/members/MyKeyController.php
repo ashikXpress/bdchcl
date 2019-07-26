@@ -15,11 +15,13 @@ class MyKeyController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($id)
+    public function index()
     {
-        //$empId = new MyKeyModel();
-        //$myKeys = DB::table('key_tokens')->where('id', $empId->getEmpId())->select(['key_id', 'has_use', 'member_uid', 'created_by']);
+        $empId = session()->get('empId');
+        //$myKeys = DB::table('key_tokens')->select('id', 'key_id', 'has_use', 'member_uid', 'created_by')->where('id', $empId)->get();
+        $myKeys = Keytoken::select('id', 'key_id', 'has_use', 'member_uid', 'created_by')->where('ref_id', $empId)->get();
 
+        return view('members.mykey')->with(compact('myKeys', $myKeys));
     }
 
     /**
