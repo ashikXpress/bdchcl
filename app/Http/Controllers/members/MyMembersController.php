@@ -2,13 +2,11 @@
 
 namespace App\Http\Controllers\members;
 
-use App\Keytoken;
-use App\MyKeyModel;
+use App\MemberRegistration;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\DB;
 
-class MyKeyController extends Controller
+class MyMembersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,10 +16,10 @@ class MyKeyController extends Controller
     public function index()
     {
         $empId = session()->get('empId');
-        //$myKeys = DB::table('key_tokens')->select('id', 'key_id', 'has_use', 'member_uid', 'created_by')->where('id', $empId)->get();
-        $myKeys = Keytoken::select('id', 'key_id', 'has_use', 'member_uid', 'created_by')->where('ref_id', $empId)->get();
-
-        return view('members.mykey')->with(compact('myKeys', $myKeys));
+        $my_members = MemberRegistration::select('id', 'uid', 'first_name', 'last_name', 'dob', 'gender', 'house_no', 'village_or_rood_no',
+            'post_office', 'sub_district', 'district', 'post_code', 'nid_or_birth_id', 'phone_number',
+            'education_qualification', 'occupation', 'email', 'ref_id', 'key_id', 'photo')->where('ref_id', $empId)->paginate(10);
+        return view('members.my_members')->with(compact('my_members', $my_members));
     }
 
     /**
@@ -31,13 +29,13 @@ class MyKeyController extends Controller
      */
     public function create()
     {
-
+        return view('members.member_add');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -48,21 +46,18 @@ class MyKeyController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
-        $myKeys = Keytoken::where('ref_id', $id);
-        $myKeys->select('id', 'key_id', 'has_use', 'member_uid', 'created_by')->get();
-
-        return view('members.mykey')->with(compact('myKeys', $myKeys));
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -73,8 +68,8 @@ class MyKeyController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -85,13 +80,11 @@ class MyKeyController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
         //
     }
-
-
 }

@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+$empPhoto = session()->get('empPhoto');
+?>
+
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -149,7 +153,7 @@
                     <li class="dropdown dropdown-user admin-user">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <div class="user-image">
-                                <img src="{{ asset('backend/assets/dist/img/avatar4.png') }}" class="img-circle"
+                                <img src="<?php echo asset("$empPhoto"); ?>" class="img-circle"
                                      height="40" width="40" alt="User Image">
                             </div>
                         </a>
@@ -175,11 +179,17 @@
             <!-- Sidebar user panel -->
             <div class="user-panel">
                 <div class="image pull-left">
-                    <img src="{{ asset('backend/assets/dist/img/avatar5.png') }}" class="img-circle" alt="User Image">
+                    <img src="<?php echo asset("$empPhoto"); ?>" class="img-circle"
+                         height="40" width="40" alt="User Image">
                 </div>
                 <div class="info">
                     <h4>Welcome</h4>
-                    <p></p>
+                    <p> <?php
+                        $empFirstName = session()->get('empFirstName');
+                        $empLastName = session()->get('empLastName');
+
+                        echo $empFirstName . " " . $empLastName;
+                        ?> </p>
                 </div>
             </div>
 
@@ -201,14 +211,21 @@
                             </span>
                     </a>
                 </li>
+
                 <li class="treeview">
-                    <a href="">
-                        <i class="fa fa-list-alt"></i><span>Add Member</span>
+                    <a href="#">
+                        <i class="fa fa-credit-card-alt"></i><span>My Members</span>
                         <span class="pull-right-container">
-                            <i class="fa fa-angle-left pull-right"></i>
-                            </span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                                </span>
                     </a>
+                    <ul class="treeview-menu">
+                        <li><a href="{{ route('member.add_member') }}">Add Member</a></li>
+                        <li><a href="{{ route('member.my_members') }}">Members List</a></li>
+                    </ul>
                 </li>
+
+
                 <li class="treeview">
                     <a href="{{ route('member.my_key') }}">
                         <i class="fa fa-credit-card-alt"></i><span>My Key</span>

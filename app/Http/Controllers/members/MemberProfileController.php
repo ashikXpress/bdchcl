@@ -18,8 +18,8 @@ class MemberProfileController extends Controller
     {
         $empId = session()->get('empId');
 
-        $profile = Employee::select('id',  'first_name', 'last_name', 'photo')->find($empId);
-        return view('members.profile')->with(compact('profile', $profile));
+        //$profile = Employee::select('id', 'uid', 'first_name', 'last_name', 'photo')->where('id', $empId)->get();
+        return view('members.profile', ['profile' => Employee::findOrFail($empId)]);
     }
 
     /**
@@ -51,10 +51,7 @@ class MemberProfileController extends Controller
      */
     public function show($id)
     {
-        //$emp = Employee::select('id', 'first_name', 'last_name', 'photo')->find($id);
-        $empProfile = DB::table('employees')->where('id', $id)->select('id', 'first_name', 'last_name', 'photo')->get();
-        dd($empProfile);
-        return view('members.profile')->with(compact('empProfile', $empProfile));
+        //
     }
 
     /**
@@ -90,4 +87,5 @@ class MemberProfileController extends Controller
     {
         //
     }
+
 }

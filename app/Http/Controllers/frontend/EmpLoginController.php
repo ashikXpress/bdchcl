@@ -35,11 +35,17 @@ class EmpLoginController extends Controller
         $email = DB::table('employees')->where('email', $request->input('email'))->value('email');
         $password = DB::table('employees')->where('password', $request->input('password'))->value('password');
         $empId = DB::table('employees')->where('email', $request->input('email'))->value('id');
+        $empPhoto = DB::table('employees')->where('email', $request->input('email'))->value('photo');
+        $empFirstName = DB::table('employees')->where('email', $request->input('email'))->value('first_name');
+        $empLastName = DB::table('employees')->where('email', $request->input('email'))->value('last_name');
 
         $request->session()->put('empId', $empId);
+        $request->session()->put('empPhoto', $empPhoto);
+        $request->session()->put('empFirstName', $empFirstName);
+        $request->session()->put('empLastName', $empLastName);
 
         if ($users_email == $email && $users_password == $password) {
-            return view('members.profile');
+            return redirect()->route('member.profile');
         } else {
             session()->flash('message', 'email or password does not match');
             return redirect()->back()->withInput($request->only('email', 'remember'));

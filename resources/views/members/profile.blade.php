@@ -34,21 +34,21 @@
                 <div class="col-sm-12 col-md-4">
                     <div class="card">
                         <div class="card-header">
-                            <div class="card-header-headshot"></div>
+                            <img src="<?php echo asset("$profile->photo")?>" class="card-header-headshot"/>
                         </div>
                         <div class="card-content">
                             <div class="card-content-member">
-                                <h4 class="m-t-0"></h4>
+                                <h4 class="m-t-0"> {{ $profile->first_name }} {{ $profile->last_name }} </h4>
                                 <p class="m-0"><i class="pe-7s-map-marker"></i>Bangladesh</p>
                             </div>
                             <div class="card-content-languages">
                                 <div class="card-content-languages-group">
                                     <div>
-                                        <h4>Speaks:</h4>
+                                        <h4>User Id :</h4>
                                     </div>
                                     <div>
                                         <ul>
-                                            <li>English
+                                            <li>{{ $profile->uid }}{{ $profile->id }}
                                                 <div class="fluency fluency-4"></div>
                                             </li>
                                         </ul>
