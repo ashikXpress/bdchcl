@@ -42,7 +42,7 @@
                             </div>
                         </div>
                         <div class="panel-body">
-                            <form class="col-sm-6" action="{{ route('member.store') }}" method="post"
+                            <form class="col-sm-6" action="{{ route('member.my_members.store') }}" method="post"
                                   enctype="multipart/form-data">
 
                                 @csrf

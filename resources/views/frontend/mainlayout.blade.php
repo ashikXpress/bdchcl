@@ -26,28 +26,21 @@
                 <div class="left-side">
                     <ul class="header-links">
                         <li><a href="{{ route('login') }}"><span
-                                        class="header-links-icon icon-login"></span><span>Login</span></a></li>
+                                    class="header-links-icon icon-login"></span><span>Login</span></a></li>
                         <li><a href="{{ route('emp.login') }}"><span
-                                        class="header-links-icon icon-login"></span><span>Employee Login</span></a></li>
-
-                        <li><a href=""><span
-                                        class="header-links-icon icon-login"></span><span>Member Register</span></a>
-                        </li>
+                                    class="header-links-icon icon-login"></span><span>Employee Login</span></a></li>
                     </ul>
                     <div class="user-dropdown dropdown visible-sm visible-xs"><a title="My Account"
                                                                                  class="dropdown-toggle"
                                                                                  data-toggle="dropdown"><span
-                                    class="header-links-icon icon-account"></span><span
-                                    class="user-text">My Account</span><span class="dropdown-arrow"></span></a>
+                                class="header-links-icon icon-account"></span><span
+                                class="user-text">My Account</span><span class="dropdown-arrow"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="{{ route('login') }}"><span class="header-links-icon icon-login"></span><span>Login</span></a>
                             </li>
-                            <li><a href="{{ route('login') }}"><span class="header-links-icon icon-login"></span><span>Employee Login</span></a>
+                            <li><a href="{{ route('emp.login') }}"><span
+                                        class="header-links-icon icon-login"></span><span>Employee Login</span></a>
                             </li>
-                            <li><a href="{{ route('register') }}"><span
-                                            class="header-links-icon icon-login"></span><span>Member Registration</span></a>
-                            </li>
-
                         </ul>
                     </div>
                 </div>
@@ -62,8 +55,8 @@
                     <a href="#" class="header-search-btn" title="Search"><span class="hidden-sm hidden-xs">Search</span></a>
                     <div class="cart-dropdown dropdown pull-right"><a title="Shopping Cart" class="dropdown-toggle"
                                                                       data-toggle="dropdown"><span
-                                    class="dropdown-icon"></span><span class="badge">2</span><span
-                                    class="hidden-sm hidden-xs">2 item(s)</span></a>
+                                class="dropdown-icon"></span><span class="badge">2</span><span
+                                class="hidden-sm hidden-xs">2 item(s)</span></a>
                         {{--<div class="dropdown-menu">--}}
                         {{--<div class="cart-dropdown-header"><span class="dropdown-icon"></span>2 item(s) - $665.00--}}
                         {{--</div>--}}
@@ -108,13 +101,13 @@
                     </div>
                     <div class="currency-dropdown dropdown"><a title="Currenct" class="dropdown-toggle"
                                                                data-toggle="dropdown"><span
-                                    class="long-name">US Dollar</span><span class="short-name">USD</span><span
-                                    class="dropdown-arrow"></span></a>
+                                class="long-name">US Dollar</span><span class="short-name">USD</span><span
+                                class="dropdown-arrow"></span></a>
                     </div>
                     <div class="language-dropdown dropdown"><a title="Language" class="dropdown-toggle"
                                                                data-toggle="dropdown"><span
-                                    class="long-name">English</span><span class="short-name">Eng</span><span
-                                    class="dropdown-arrow"></span></a>
+                                class="long-name">English</span><span class="short-name">Eng</span><span
+                                class="dropdown-arrow"></span></a>
                     </div>
                 </div>
             </div>
@@ -125,7 +118,8 @@
                     <div class="logo-container">
                         <h1 class="logo clearfix">
                             <a href="{{ route('index') }}"
-                               title="Bangladesh Community Health Care"><img style="width: 50px; height: 50%;" src="{{ asset('logo.png') }}" alt="">BCHCL</a>
+                               title="Bangladesh Community Health Care"><img style="width: 50px; height: 50%;"
+                                                                             src="{{ asset('logo.png') }}" alt="">BCHCL</a>
                         </h1></div>
                     <div class="right-side clearfix">
                         <!--=========================================================================
@@ -133,10 +127,10 @@
                         ==========================================================================-->
                         <nav id="main-nav" role="navigation">
                             <div id="responsive-nav"><a id="responsive-btn" href="#"><span
-                                            class="responsive-btn-icon"><span class="responsive-btn-block"></span> <span
-                                                class="responsive-btn-block"></span> <span
-                                                class="responsive-btn-block last"></span></span> <span
-                                            class="responsive-btn-text">Menu</span></a>
+                                        class="responsive-btn-icon"><span class="responsive-btn-block"></span> <span
+                                            class="responsive-btn-block"></span> <span
+                                            class="responsive-btn-block last"></span></span> <span
+                                        class="responsive-btn-text">Menu</span></a>
                                 <div id="responsive-menu-container"></div>
                             </div>
                             <ul class="menu clearfix">
@@ -189,7 +183,7 @@
      ==========================================================================-->
     <footer id="footer">
         {{--<div id="footer-top">--}}
-            {{--<div id="footer-top-map"></div>--}}
+        {{--<div id="footer-top-map"></div>--}}
         {{--</div>--}}
         <div id="footer-inner">
             <div class="container">
@@ -227,7 +221,8 @@
         <div id="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 clearfix"><p class="copyright-text">&copy; {{ \Illuminate\Support\Carbon::now() }} BDCHCL.
+                    <div class="col-xs-12 clearfix"><p class="copyright-text">
+                            &copy; {{ \Illuminate\Support\Carbon::now() }} BDCHCL.
                             All Rights Reserved.</p>
                         <ul class="social-links color2 clearfix">
                             <li><a href="#" class="social-icon icon-facebook" title="Facebook"></a></li>

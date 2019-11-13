@@ -113,6 +113,7 @@ Route::get('/member/my_key/', 'members\MyKeyController@index')->name('member.my_
 //Member add by member/employee
 Route::get('/member/add_member', 'members\MyMembersController@create')->name('member.add_member');
 Route::get('/member/my_members', 'members\MyMembersController@index')->name('member.my_members');
+Route::post('/member/my_members/store', 'members\MyMembersController@store')->name('member.my_members.store');
 
 
 

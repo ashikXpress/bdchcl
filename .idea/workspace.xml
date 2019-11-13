@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1710840a-7735-4c3d-8d28-fe295181c685" name="Default" comment="third commit">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/members/MyMembersController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/md-jasim_1564150947.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/members/member_add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/members/my_members.blade.php" afterDir="false" />
+    <list default="true" id="1710840a-7735-4c3d-8d28-fe295181c685" name="Default" comment="fourth commit">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6be6ed7d-36ed-4cfc-a9cf-ac2de6f15b13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6be6ed7d-36ed-4cfc-a9cf-ac2de6f15b13.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/frontend/EmpLoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/frontend/EmpLoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/members/MemberProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/members/MemberProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/members/MyKeyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/members/MyKeyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/members/mainlayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/members/mainlayout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/members/MyMembersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/members/MyMembersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/mainlayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/mainlayout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/members/member_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/members/member_add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/members/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/members/profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -20,6 +17,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
@@ -52,7 +52,23 @@
         <option value="jasimdipu &lt;dipu.j247@gmail.com&gt;" />
       </list>
     </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -144,11 +160,8 @@
       <path value="$PROJECT_DIR$/vendor/webpatser/laravel-uuid" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="9" />
-    <option name="y" value="16" />
-    <option name="width" value="1348" />
-    <option name="height" value="733" />
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1OYI3Ke4GrX0mfzI3Y8xzCeY7xl" />
   <component name="ProjectLevelVcsManager">
@@ -159,9 +172,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="main&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/resources/views/backend/mainlayout.blade.php&#10;web&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/routes/web.php&#10;employees&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/database/migrations/2019_05_04_071749_create_employees_table.php&#10;posit&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/app/Positions.php&#10;em&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/app/Employee.php&#10;index&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/resources/views/backend/employee/index.blade.php&#10;inde&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/resources/views/backend/employee/index.blade.php&#10;Area&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/app/Area.php&#10;TEam&#9;null&#9;null&#10;Team&#9;null&#9;null&#10;team&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/resources/views/backend/employee/team_create.blade.php&#10;emp_pro&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/resources/views/backend/employee/emp_profile.blade.php&#10;emp&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/resources/views/frontend/account/emp_login.blade.php&#10;Empl&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/app/Employee.php&#10;add&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/resources/views/backend/employee/add.blade.php&#10;Regi&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/app/Http/Controllers/Auth/RegisterController.php&#10;Home&#9;null&#9;null&#10;Ho&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/resources/views/frontend/account/emp_login.blade.php&#10;Emp&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/app/Http/Controllers/backend/EmployeeController.php&#10;users&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/database/migrations/2014_10_12_000000_create_users_table.php&#10;user&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/app/User.php&#10;Login&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/app/Http/Controllers/Auth/LoginController.php&#10;login&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/resources/views/auth/login.blade.php&#10;emplo&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/app/Employee.php&#10;EmpLog&#9;null&#9;null&#10;Regis&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/app/Http/Controllers/Auth/RegisterController.php&#10;tea&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/database/migrations/2019_05_28_170709_create_team_setup_table.php&#10;team_&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/database/migrations/2019_05_28_170709_create_team_setup_table.php&#10;User&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/app/User.php&#10;area&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/database/migrations/2019_05_04_071550_create_areas_table.php&#10;depa&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/app/Http/Controllers/backend/DepartmentController.php&#10;posi&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/database/migrations/2019_05_04_071543_create_positions_table.php&#10;Dea&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/app/Http/Controllers/backend/DealerController.php&#10;member&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/app/Http/Controllers/backend/MemberController.php&#10;Emplo&#9;null&#9;null&#10;edit&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/resources/views/backend/position/edit.blade.php&#10;we&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/routes/web.php&#10;regis&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/resources/views/auth/register.blade.php&#10;Pos&#9;null&#9;null&#10;pos&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/database/migrations/2019_05_04_071543_create_positions_table.php&#10;mem&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/app/Http/Controllers/backend/MemberController.php&#10;rEg&#9;null&#9;null&#10;home&#9;null&#9;null&#10;reg&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/resources/views/auth/register.blade.php&#10;Depart&#9;null&#9;null&#10;depart&#9;null&#9;null&#10;Mem&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/app/MemberRegistration.php&#10;empl&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/database/migrations/2019_05_04_071749_create_employees_table.php&#10;erb&#9;null&#9;null&#10;dea&#9;FILE&#9;file:///opt/lampp/htdocs/bdchcl/app/Http/Controllers/backend/DealerController.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/members" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -170,7 +184,9 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -290,6 +306,19 @@
       <workItem from="1564148025135" duration="3948000" />
       <workItem from="1564233987395" duration="6561000" />
       <workItem from="1564292582729" duration="4720000" />
+      <workItem from="1564309094919" duration="8899000" />
+      <workItem from="1564367300375" duration="3603000" />
+      <workItem from="1566185893534" duration="612000" />
+      <workItem from="1568042795597" duration="1087000" />
+      <workItem from="1569163802488" duration="506000" />
+      <workItem from="1569164349030" duration="757000" />
+      <workItem from="1569557709945" duration="38000" />
+      <workItem from="1573277081255" duration="1326000" />
+      <workItem from="1573446690300" duration="3481000" />
+      <workItem from="1573641685046" duration="208000" />
+      <workItem from="1573641922040" duration="216000" />
+      <workItem from="1573645710384" duration="1520000" />
+      <workItem from="1573650092805" duration="837000" />
     </task>
     <task id="LOCAL-00001" summary="second commit">
       <created>1563852607116</created>
@@ -305,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564150417873</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fourth commit">
+      <created>1564309158482</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564309158482</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,19 +364,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="second commit" />
     <MESSAGE value="third commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="third commit" />
+    <MESSAGE value="fourth commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="fourth commit" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/members/mainlayout.blade.php</url>
-          <line>202</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

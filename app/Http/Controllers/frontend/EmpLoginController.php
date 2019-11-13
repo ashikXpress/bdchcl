@@ -32,9 +32,12 @@ class EmpLoginController extends Controller
 
         $users_email = $request->input('email');
         $users_password = $request->input('password');
+
         $email = DB::table('employees')->where('email', $request->input('email'))->value('email');
         $password = DB::table('employees')->where('password', $request->input('password'))->value('password');
+
         $empId = DB::table('employees')->where('email', $request->input('email'))->value('id');
+
         $empPhoto = DB::table('employees')->where('email', $request->input('email'))->value('photo');
         $empFirstName = DB::table('employees')->where('email', $request->input('email'))->value('first_name');
         $empLastName = DB::table('employees')->where('email', $request->input('email'))->value('last_name');
